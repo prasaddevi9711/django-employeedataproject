@@ -1,0 +1,68 @@
+{%extends 'base.html'%}
+
+<html>
+    <head>
+        <title>Welcome</title>
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        
+    </head>
+    <body>
+    {%block content%}
+      <form  method="POST">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                   
+                    <h1>CONTACT DETAILS</h1>
+                    <table style="font-size: 30px; background-color: darkcyan; padding: 10px 60px; border: 2px solid;">
+                        <tr>
+                            <th><label>Ename:</label></th>
+                            <td style="padding: 20;"><input type="text"name="ename"></td>
+                        </tr>
+                        <tr>
+                            <th><label>Email:</label></th>
+                            <td style="padding: 20;"><input type="email"name="email"></td>
+                        </tr>
+                        <tr>
+                            <th><label>Subject:</label></th>
+                            <td style="padding: 20
+                            ;"><input type="text"name="subject"></td>
+                        </tr>
+                        <tr>
+                            <th><label>Your Message:</label></th>
+                            <td style="padding: 20;"><textarea name="your message" width="50px" height="25px"></textarea></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td><center><input type="button" value="Send" style="background-color: green; color: white;" ></center></td>
+                        </tr>
+                    </table>
+                   
+                        <h3>Address:</h3>
+                        <h4>
+                        <ul>
+                           <li>Location:hyderbed</li>
+                           <li> Email:prasad@gmail.com</li>
+                           <li>Contact Number:654789412</li>
+                        </ul>
+                        </h4>
+                        <div class="center">
+                            <td><center>
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3495.1471261654638!2d82.16721612258381!3d17.046264336963528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3781605c7df143%3A0x8be02617c390b725!2sSamalkot%20Railway%20Station!5e0!3m2!1sen!2sin!4v1631342311472!5m2!1sen!2sin" width="600" height="450" style="columns: md -8px;;" allowfullscreen="center" loading="lazy"></iframe></center> 
+                               </center>
+                            </td>
+                        </div>
+                    
+                </div>
+            </div> 
+        </div>
+      </form>
+    {%endblock%}
+    </body>
+</html>

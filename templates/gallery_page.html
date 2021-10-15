@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+{% load static %}
+
+<html>
+    <head>
+        <title>Welcome</title>
+    </head>
+    <body>
+    {%block content%}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="{% static 'images/gate_family_og.jpg'%}" style="height: 100%; width: 100%;" alt="">
+                </div>
+                <div class="col-md-4">
+                    <img src="{% static 'images/gate_family_og.jpg'%}" style="height: 100%; width: 100%;" alt="">
+                </div>
+                <div class="col-md-4">
+                    <img src="{% static 'images/jaguar.jpg'%}" style="height: 100%; width: 100%;" ">
+                </div>
+            </div>
+        </div>
+    {%endblock%}
+    </body>
+</html>

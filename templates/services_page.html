@@ -1,0 +1,42 @@
+{%extends 'base.html'%}
+
+
+<html>
+    <head>
+        <title>Welcome</title>
+    </head>
+    <body>
+    {% block content %}
+        {% if services %}
+            <table class="table-bordered text-center table">
+                <thead>
+                    <tr style= "color: white; background-color: black;">
+                        <th>course name</th>
+                        <th>course fee</th>
+                        <th>start date</th>
+                        <th>duration</th>
+                        <th>trainer name</th>
+                        <th>trainer exp</th>
+                    </tr>
+                </thead>
+            
+              <tbody>
+                {% for service in services%}
+                  <tr style="color:black; background-color: darkcyan;">
+                      <td>{{service.course_name}}</td>
+                      <td>{{service.course_fee}}</td>
+                      <td>{{service.start_date}}</td>
+                      <td>{{service.duration}}</td>
+                      <td>{{service.trainer_name}}</td>
+                      <td>{{service.trainer_exp}}</td>
+                  </tr>
+                {%endfor%}
+              </tbody>
+            </table>
+
+        {% else %}
+        <h1>No courese are available </h1>
+        {%endif%}
+    {%endblock%}
+    </body>
+</html>
